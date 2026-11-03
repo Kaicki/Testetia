@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>TIAFLIX</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="nav">
+  <a href="#" class="logo" id="logo">TIAFLIX</a>
+  <button data-view="inicio" class="ativo"><svg viewBox="0 0 24 24"><path d="M12 3 3 11h2v9h5v-6h4v6h5v-9h2z"/></svg><span>Início</span></button>
+  <button data-view="filmes"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM6 7v2h2V7zm0 4v2h2v-2zm0 4v2h2v-2zm10-8v2h2V7zm0 4v2h2v-2zm0 4v2h2v-2z"/></svg><span>Filmes</span></button>
+  <button data-view="series"><svg viewBox="0 0 24 24"><path d="M3 5h18v11H3zm5 13h8v2H8z"/></svg><span>Séries</span></button>
+  <button data-view="lista"><svg viewBox="0 0 24 24"><path d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z"/></svg><span>Minha lista</span></button>
+</aside>
+
+<header id="topo">
+  <span class="logo-m">TIAFLIX</span>
+  <div class="acoes">
+    <button id="btnBusca" aria-label="Buscar"><svg viewBox="0 0 24 24"><path d="M10 3a7 7 0 1 0 4.2 12.6l4.6 4.6 1.4-1.4-4.6-4.6A7 7 0 0 0 10 3zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10z"/></svg></button>
+    <button id="btnEntrar" class="pill">Entrar</button>
+    <button id="btnSair" class="pill sec" hidden>Sair</button>
+  </div>
+</header>
+
+<main>
+  <section id="hero"></section>
+  <div id="conteudo"></div>
+  <footer>© TIAFLIX / BERTAGLIA</footer>
+</main>
+
+<section id="busca" hidden>
+  <div class="busca-topo">
+    <input id="q" type="search" placeholder="Buscar filmes e séries" autocomplete="off">
+    <button id="fechaBusca">Cancelar</button>
+  </div>
+  <div id="resultados" class="grade"></div>
+</section>
+
+<section id="detalhe" hidden></section>
+
+<section id="player" hidden>
+  <div class="player-topo"><button id="voltar">← Voltar</button><span id="playerTitulo"></span><button id="telaCheia">⛶</button></div>
+  <div id="videoWrap"></div>
+</section>
+
+<div id="authModal" class="auth-fundo" hidden>
+  <div class="auth-card" role="dialog" aria-modal="true">
+    <button class="fechar-auth" id="authFechar" aria-label="Fechar">&times;</button>
+    <h2 id="authTitulo">Entrar</h2>
+    <p class="sub" id="authSub">Use seu e-mail e senha para acessar.</p>
+    <label for="authEmail">E-mail</label>
+    <input id="authEmail" type="email" autocomplete="email" inputmode="email">
+    <label for="authSenha">Senha</label>
+    <input id="authSenha" type="password" autocomplete="current-password" minlength="6">
+    <button class="principal" id="authEnviar">Entrar</button>
+    <p id="authMsg" role="status"></p>
+    <button class="trocar" id="authTrocar">Ainda não tem conta? <b>Criar conta</b></button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="auth.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
