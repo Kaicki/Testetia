@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>TIAFLIX</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="extras.css">
+</head>
+<body>
+
+<header id="topo">
+  <a href="#" class="logo" id="logo">TIAFLIX</a>
+  <nav id="menu">
+    <button data-view="inicio" class="ativo">Início</button>
+    <button data-view="filmes">Filmes</button>
+    <button data-view="series">Séries</button>
+    <button data-view="lista">Minha lista</button>
+  </nav>
+  <div class="busca">
+    <input type="search" id="busca" placeholder="Buscar título..." autocomplete="off" aria-label="Buscar">
+  </div>
+  <div class="conta">
+    <button type="button" id="btnEntrar">Entrar</button>
+    <span id="contaEmail" hidden></span>
+    <button type="button" id="btnSair" class="sec" hidden>Sair</button>
+  </div>
+</header>
+
+<main>
+  <section id="hero" class="hero"></section>
+  <div id="filtros" class="filtros" hidden>
+    <select id="fGenero" aria-label="Gênero"></select>
+    <select id="fAno" aria-label="Ano"></select>
+    <button id="limpar" type="button">Limpar</button>
+  </div>
+  <div id="conteudo"></div>
+</main>
+
+<section id="player" class="player" hidden>
+  <div class="player-topo">
+    <button id="voltar" type="button">&larr; Voltar</button>
+    <span id="playerTitulo"></span>
+    <button id="telaCheia" type="button">⛶ Tela cheia</button>
+  </div>
+  <div class="video-area">
+    <div id="videoWrap" class="video-wrap"></div>
+  </div>
+  <div class="player-corpo">
+    <div id="playerInfo" class="player-info"></div>
+    <div id="playerEpisodios" class="player-episodios" hidden></div>
+    <div class="player-sugestoes">
+      <h3>Você também pode gostar</h3>
+      <div id="playerSugestoes" class="grade"></div>
+    </div>
+  </div>
+</section>
+
+<div id="authModal" class="auth-fundo" hidden>
+  <div class="auth-card" role="dialog" aria-modal="true" aria-labelledby="authTitulo">
+    <button type="button" class="fechar-auth" id="authFechar" aria-label="Fechar">&times;</button>
+    <h2 id="authTitulo">Entrar</h2>
+    <p class="sub" id="authSub">Use seu e-mail e senha para acessar.</p>
+    <label for="authEmail">E-mail</label>
+    <input id="authEmail" type="email" autocomplete="email" inputmode="email">
+    <label for="authSenha">Senha</label>
+    <input id="authSenha" type="password" autocomplete="current-password" minlength="6">
+    <button type="button" class="principal" id="authEnviar">Entrar</button>
+    <p id="authMsg" role="status"></p>
+    <button type="button" class="trocar" id="authTrocar">Ainda não tem conta? <b>Criar conta</b></button>
+  </div>
+</div>
+
+<footer>© TIAFLIX / BERTAGLIA </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script>
+(function () {
+  "use strict";
+  var SUPABASE_URL = "https://celexcohsnbjhjbletzv.supabase.co";
+  var SUPABASE_KEY = "sb_publishable_WfAtwu9zliLD6jWnavtpcw_6VWvf69J";
+  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+  window.tiaflixAuth = sb;
+
+  var $ = function (id) { return document.getElementById(id); };
+  var modal = $("authModal"), titulo = $("authTitulo"), sub = $("authSub");
+  var inEmail = $("authEmail"), inSenha = $("authSenha");
+  var btnEnviar = $("authEnviar"), btnTrocar = $("authTrocar"), msg = $("authMsg");
+  var modo = "entrar";
+
+  function mostrarMsg(texto, tipo) {
+    msg.textContent = texto || "";
+    msg.className = tipo || "";
+  }
+
+  function definirModo(novo) {
+    modo = novo;
+    mostrarMsg("");
+    if (modo === "entrar") {
+      titulo.textContent = "Entrar";
+      sub.textContent = "Use seu e-mail e senha para acessar.";
+      btnEnviar.textContent = "Entrar";
+      btnTrocar.innerHTML = "Ainda não tem conta? <b>Criar conta</b>";
+      inSenha.setAttribute("autocomplete", "current-password");
+    } else {
+      titulo.textContent = "Criar conta";
+      sub.textContent = "Cadastre-se com e-mail e uma senha de pelo menos 6 caracteres.";
+      btnEnviar.textContent = "Criar conta";
+      btnTrocar.innerHTML = "Já tem conta? <b>Entrar</b>";
+      inSenha.setAttribute("autocomplete", "new-password");
+    }
+  }
+
+  function abrir(novoModo) {
+    definirModo(novoModo || "entrar");
+    modal.hidden = false;
+    inEmail.focus();
+  }
+  function fechar() { modal.hidden = true; }
+
+  function traduzirErro(e) {
+    var t = (e && e.message || "").toLowerCase();
+    if (t.indexOf("invalid login") > -1) return "E-mail ou senha incorretos.";
+    if (t.indexOf("already registered") > -1) return "Este e-mail já tem conta. Toque em Entrar.";
+    if (t.indexOf("password should be") > -1) return "A senha precisa ter pelo menos 6 caracteres.";
+    if (t.indexOf("valid email") > -1 || t.indexOf("invalid email") > -1) return "Digite um e-mail válido.";
+    if (t.indexOf("email not confirmed") > -1) return "Confirme seu e-mail pelo link que enviamos.";
+    if (t.indexOf("rate limit") > -1) return "Muitas tentativas. Aguarde um pouco e tente de novo.";
+    return "Não foi possível concluir. " + (e && e.message ? e.message : "");
+  }
+
+  async function enviar() {
+    var email = inEmail.value.trim();
+    var senha = inSenha.value;
+    if (!email || !senha) { mostrarMsg("Preencha e-mail e senha.", "erro"); return; }
+    btnEnviar.disabled = true;
+    mostrarMsg("Aguarde...");
+    try {
+      if (modo === "criar") {
+        var r = await sb.auth.signUp({ email: email, password: senha });
+        if (r.error) throw r.error;
+        if (r.data.session) {
+          mostrarMsg("Conta criada! Você já está logado.", "ok");
+          setTimeout(fechar, 900);
+        } else {
+          mostrarMsg("Conta criada! Confirme pelo link enviado ao seu e-mail.", "ok");
+        }
+      } else {
+        var l = await sb.auth.signInWithPassword({ email: email, password: senha });
+        if (l.error) throw l.error;
+        mostrarMsg("Login feito!", "ok");
+        setTimeout(fechar, 600);
+      }
+    } catch (e) {
+      mostrarMsg(traduzirErro(e), "erro");
+    } finally {
+      btnEnviar.disabled = false;
+    }
+  }
+
+  function atualizarTopo(session) {
+    var logado = !!(session && session.user);
+    $("btnEntrar").hidden = logado;
+    $("btnSair").hidden = !logado;
+    $("contaEmail").hidden = !logado;
+    $("contaEmail").textContent = logado ? session.user.email : "";
+  }
+
+  $("btnEntrar").addEventListener("click", function () { abrir("entrar"); });
+  $("btnSair").addEventListener("click", function () { sb.auth.signOut(); });
+  $("authFechar").addEventListener("click", fechar);
+  btnTrocar.addEventListener("click", function () {
+    definirModo(modo === "entrar" ? "criar" : "entrar");
+  });
+  btnEnviar.addEventListener("click", enviar);
+  inSenha.addEventListener("keydown", function (e) { if (e.key === "Enter") enviar(); });
+  inEmail.addEventListener("keydown", function (e) { if (e.key === "Enter") inSenha.focus(); });
+  modal.addEventListener("click", function (e) { if (e.target === modal) fechar(); });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !modal.hidden) fechar();
+  });
+
+  sb.auth.getSession().then(function (r) { atualizarTopo(r.data.session); });
+  sb.auth.onAuthStateChange(function (_evento, session) { atualizarTopo(session); });
+})();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
