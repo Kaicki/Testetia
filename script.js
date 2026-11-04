@@ -15,7 +15,7 @@
     view: "inicio"
   };
 
-  /* ---------- catálogo ---------- */
+  /* ---------- CATÁLOGO ---------- */
 
   function lista(d) {
     if (Array.isArray(d)) return d;
@@ -172,7 +172,7 @@
     });
   }
 
-  /* ---------- minha lista ---------- */
+  /* ---------- MINHA LISTA ---------- */
 
   function favs() {
     try {
@@ -207,11 +207,12 @@
     salvaFavs(a);
   }
 
-  /* ---------- componentes ---------- */
+  /* ---------- COMPONENTES ---------- */
 
   function cartaz(t) {
     var d = document.createElement("button");
 
+    d.type = "button";
     d.className = "cartaz" + (t.poster ? " tem" : "");
 
     if (t.poster) {
@@ -222,11 +223,15 @@
     d.innerHTML = "<span>" + esc(t.titulo) + "</span>";
     d.setAttribute("aria-label", t.titulo || "Abrir título");
 
-    // CORREÇÃO: fecha a busca antes de abrir os detalhes.
-    d.onclick = function () {
+    d.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
       fecharBusca();
+      fechaDetalhe();
+
       abrirDetalhe(t);
-    };
+    });
 
     return d;
   }
@@ -270,7 +275,7 @@
     });
   }
 
-  /* ---------- telas ---------- */
+  /* ---------- TELAS ---------- */
 
   function render() {
     var c = $("conteudo");
@@ -396,7 +401,7 @@
     };
   }
 
-  /* ---------- controle da busca ---------- */
+  /* ---------- CONTROLE DA BUSCA ---------- */
 
   function fecharBusca() {
     var buscaEl = $("busca");
@@ -414,13 +419,28 @@
     }
   }
 
-  /* ---------- página do título ---------- */
+  function abrirBusca() {
+    fechaDetalhe();
+
+    var buscaEl = $("busca");
+
+    if (!buscaEl) return;
+
+    // Não usar style.display = "none" aqui:
+    // o atributo hidden controla a abertura e o fechamento.
+    buscaEl.hidden = false;
+
+    $("q").value = "";
+    $("resultados").innerHTML = "";
+    $("q").focus();
+  }
+
+  /* ---------- PÁGINA DO TÍTULO ---------- */
 
   function abrirDetalhe(t) {
     var d = $("detalhe");
     var serie = t.tipo === "serie";
 
-    // Garante que a busca esteja fechada antes de mostrar os detalhes.
     fecharBusca();
 
     var meta = [
@@ -494,7 +514,9 @@
 
       '</div><div id="dLista2"></div></div>';
 
+    // Mostrar detalhes acima da busca.
     d.hidden = false;
+    d.style.zIndex = "1001";
     d.scrollTop = 0;
 
     document.body.style.overflow = "hidden";
@@ -640,11 +662,16 @@
   }
 
   function fechaDetalhe() {
-    $("detalhe").hidden = true;
+    var detalhe = $("detalhe");
+
+    if (detalhe) {
+      detalhe.hidden = true;
+    }
+
     document.body.style.overflow = "";
   }
 
-  /* ---------- player ---------- */
+  /* ---------- PLAYER ---------- */
 
   function tocar(t, ep) {
     var id = ep
@@ -686,7 +713,7 @@
     }
   };
 
-  /* ---------- busca ---------- */
+  /* ---------- BUSCA ---------- */
 
   function simples(s) {
     return String(s)
@@ -731,10 +758,7 @@
     });
   }
 
-  $("btnBusca").onclick = function () {
-    $("busca").hidden = false;
-    $("q").focus();
-  };
+  $("btnBusca").onclick = abrirBusca;
 
   $("fechaBusca").onclick = function () {
     fecharBusca();
@@ -744,7 +768,7 @@
     busca(this.value);
   };
 
-  /* ---------- navegação ---------- */
+  /* ---------- NAVEGAÇÃO ---------- */
 
   Array.prototype.forEach.call(
     document.querySelectorAll("#nav button"),
@@ -772,7 +796,7 @@
     e.preventDefault();
   };
 
-  /* ---------- teclado ---------- */
+  /* ---------- TECLADO ---------- */
 
   document.addEventListener("keydown", function (e) {
     if (e.key !== "Escape") return;
@@ -786,7 +810,7 @@
     }
   });
 
-  /* ---------- inicialização ---------- */
+  /* ---------- INICIALIZAÇÃO ---------- */
 
   carregar()
     .then(render)
