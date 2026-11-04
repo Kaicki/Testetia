@@ -1,0 +1,459 @@
+[
+  {
+    "id": 1,
+    "titulo": "Dan Da Dan",
+    "ano": 2024,
+    "genero": [
+      "Anime",
+      "Ação"
+    ],
+    "duracao": "1 Temporada",
+    "descricao": "Momo, que acredita em fantasmas, e Okarun, que acredita em alienígenas, se envolvem em batalhas contra seres sobrenaturais e extraterrestres.",
+    "capa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7E2vWtdoDX8Wj9n-dhz_DJWlPRCIZKkpi_13KUj2JpQ&s=10",
+    "banner": "https://i0.wp.com/guetogeek.com.br/wp-content/uploads/2024/11/Dandadan-Okarun.jpg",
+    "destaque": true,
+    "popular": true,
+    "adicionado": "2026-10-26",
+    "temporadas": [
+      {
+        "temporada": 1,
+        "episodios": [
+          {
+            "titulo": "Episódio 1",
+            "link": "https://drive.google.com/file/d/1VbEwz2KhTZ6GWNVlYxqaI6lrgguUxDDw/view"
+          },
+          {
+            "titulo": "Episódio 2",
+            "link": "https://drive.google.com/file/d/17H80phUOlLhSALOTFJ04-NOoiNs_5l1Y/view"
+          },
+          {
+            "titulo": "Episódio 3",
+            "link": "https://drive.google.com/file/d/1UcnnrZhq8_urkuCLpzKIhMbsNx6j5rDY/view"
+          },
+          {
+            "titulo": "Episódio 4",
+            "link": "https://drive.google.com/file/d/1jP9uuI14k4FWdagBYRfmIXx5m4Lgn97a/view"
+          },
+          {
+            "titulo": "Episódio 5",
+            "link": "https://drive.google.com/file/d/1gclBzuomXeb6jXrKUeoS_wqZkBWzG9aP/view"
+          },
+          {
+            "titulo": "Episódio 6",
+            "link": "https://drive.google.com/file/d/1etB2ixynK4prQfEWuGrdBh2sOztFptw4/view"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Ben 10",
+    "ano": 2005,
+    "genero": [
+      "Animação",
+      "Aventura"
+    ],
+    "duracao": "4 Temporadas",
+    "descricao": "Ben Tennyson encontra o Omnitrix, um relógio alienígena que o transforma em diferentes criaturas.",
+    "capa": "https://www.unimado.pt/images/covers/ben-10.webp",
+    "banner": "https://occ-0-8407-2218.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABdaZYvpaa-cwBi02F80J9UPgtagABzKUmaJVQ2OZwW59Z7pXd03MhywBmJQqzOBhp1pXnO0QXTtdWeJa7O7ngFfYFkeTzDIUxxPC.jpg?r=54a",
+    "destaque": false,
+    "popular": true,
+    "adicionado": "2026-10-27",
+    "temporadas": [
+      {
+        "temporada": 1,
+        "episodios": [
+          {
+            "titulo": "Episódio 1",
+            "link": "https://drive.google.com/file/d/1lxQern8nyPhTqyjntAuPjxnMcF0jF0dS/view"
+          },
+          {
+            "titulo": "Episódio 2",
+            "link": "https://drive.google.com/file/d/1cote54xQVLSV7HaZGv_c4720wZZn11jS/view"
+          },
+          {
+            "titulo": "Episódio 3",
+            "link": "https://drive.google.com/file/d/1qG7jiP0sR3GcuoLka9rWAtfi2xmvTNZx/view"
+          },
+          {
+            "titulo": "Episódio 4",
+            "link": "https://drive.google.com/file/d/1GEQ1i8X9Z_epU33rFIIO-H0ggFFQL3GD/view"
+          },
+          {
+            "titulo": "Episódio 5",
+            "link": "https://drive.google.com/file/d/11Y2dGKXezlzMQDY4FbprdVkN1OmkToY-/view"
+          },
+          {
+            "titulo": "Episódio 6",
+            "link": "https://drive.google.com/file/d/1-v0ES6bmM30SJjWV0HMfSmhcFcOHPgzD/view"
+          },
+          {
+            "titulo": "Episódio 7",
+            "link": "https://drive.google.com/file/d/1HlDve_0JkV00MVh3PJDpPxFiaCD3jnqR/view"
+          },
+          {
+            "titulo": "Episódio 8",
+            "link": "https://drive.google.com/file/d/19VX5jDcxM70gmeT_bi6Puz1D1ALEYb8D/view"
+          },
+          {
+            "titulo": "Episódio 9",
+            "link": "https://drive.google.com/file/d/1ihvSWqsGxrOkmgc9s2d-N8_HQkCC7HYB/view"
+          },
+          {
+            "titulo": "Episódio 10",
+            "link": "https://drive.google.com/file/d/1EQ0fan7FMJX8wMhJWQGhv6LJLDdt4GR0/view"
+          },
+          {
+            "titulo": "Episódio 11",
+            "link": "https://drive.google.com/file/d/1IzzcNHg0VE8t6h4If9Bl6ZxLfH4Ko3pw/view"
+          },
+          {
+            "titulo": "Episódio 12",
+            "link": "https://drive.google.com/file/d/1VZryZUKm_ZeVr30s9QBaqFR8JZeuRIGS/view"
+          },
+          {
+            "titulo": "Episódio 13",
+            "link": "https://drive.google.com/file/d/19vZOqTrWTn6ZveUyMsFUZXfjYYYTEvKb/view"
+          }
+        ]
+      },
+      {
+        "temporada": 2,
+        "episodios": [
+          {
+            "titulo": "Episódio 1",
+            "link": "https://drive.google.com/file/d/1EKMg1oovtHZHD3fsLZdCEx9nPYPCtV1x/view"
+          },
+          {
+            "titulo": "Episódio 2",
+            "link": "https://drive.google.com/file/d/1Vi4N8C4S5qmuvgXI3lumfvCeHybQfTiu/view"
+          },
+          {
+            "titulo": "Episódio 3",
+            "link": "https://drive.google.com/file/d/11LPZ2ve-N5P2v4e8sLIG2pW9Kdk95hfF/view"
+          },
+          {
+            "titulo": "Episódio 4",
+            "link": "https://drive.google.com/file/d/1rRzBHKJKSqelzGNHwC6ewl8SzzMhuCSG/view"
+          },
+          {
+            "titulo": "Episódio 5",
+            "link": "https://drive.google.com/file/d/1WqTu1FgTVATjaYXqFdpxJIIMNs70zfH-/view"
+          },
+          {
+            "titulo": "Episódio 6",
+            "link": "https://drive.google.com/file/d/1BCfmhtDpNvUQfMz3WRLkrnPQsKVHGmGq/view"
+          },
+          {
+            "titulo": "Episódio 7",
+            "link": "https://drive.google.com/file/d/1-5J8KZFnZtdsrCOMsZhFwrjsPNh8RPoA/view"
+          },
+          {
+            "titulo": "Episódio 8",
+            "link": "https://drive.google.com/file/d/13tbwHb5TNkoPtQeak3LpwoZd134IJjQN/view"
+          },
+          {
+            "titulo": "Episódio 9",
+            "link": "https://drive.google.com/file/d/1oI9_8mD6xz43F2kW6FuzSHIyqo1pzMsO/view"
+          },
+          {
+            "titulo": "Episódio 10",
+            "link": "https://drive.google.com/file/d/1hlZxbebXXkXnl_FAA3mKGdNRMDHUUwB-/view"
+          },
+          {
+            "titulo": "Episódio 11",
+            "link": "https://drive.google.com/file/d/1kuB8VySFdK90nl1YLjsIQ6_FeM6IRW2d/view"
+          },
+          {
+            "titulo": "Episódio 12",
+            "link": "https://drive.google.com/file/d/1TYrXIa7IQO2a0vNV6nkvoEm-xfTwcLB_/view"
+          },
+          {
+            "titulo": "Episódio 13",
+            "link": "https://drive.google.com/file/d/1QBz_tVWMLkuxciX6okf-c8fK__NWP_Um/view"
+          }
+        ]
+      },
+      {
+        "temporada": 3,
+        "episodios": [
+          {
+            "titulo": "Episódio 1",
+            "link": "https://drive.google.com/file/d/1EKMg1oovtHZHD3fsLZdCEx9nPYPCtV1x/view"
+          },
+          {
+            "titulo": "Episódio 2",
+            "link": "https://drive.google.com/file/d/1Vi4N8C4S5qmuvgXI3lumfvCeHybQfTiu/view"
+          },
+          {
+            "titulo": "Episódio 3",
+            "link": "https://drive.google.com/file/d/11LPZ2ve-N5P2v4e8sLIG2pW9Kdk95hfF/view"
+          },
+          {
+            "titulo": "Episódio 4",
+            "link": "https://drive.google.com/file/d/1rRzBHKJKSqelzGNHwC6ewl8SzzMhuCSG/view"
+          },
+          {
+            "titulo": "Episódio 5",
+            "link": "https://drive.google.com/file/d/1WqTu1FgTVATjaYXqFdpxJIIMNs70zfH-/view"
+          },
+          {
+            "titulo": "Episódio 6",
+            "link": "https://drive.google.com/file/d/1BCfmhtDpNvUQfMz3WRLkrnPQsKVHGmGq/view"
+          },
+          {
+            "titulo": "Episódio 7",
+            "link": "https://drive.google.com/file/d/1-5J8KZFnZtdsrCOMsZhFwrjsPNh8RPoA/view"
+          },
+          {
+            "titulo": "Episódio 8",
+            "link": "https://drive.google.com/file/d/13tbwHb5TNkoPtQeak3LpwoZd134IJjQN/view"
+          },
+          {
+            "titulo": "Episódio 9",
+            "link": "https://drive.google.com/file/d/1oI9_8mD6xz43F2kW6FuzSHIyqo1pzMsO/view"
+          },
+          {
+            "titulo": "Episódio 10",
+            "link": "https://drive.google.com/file/d/1hlZxbebXXkXnl_FAA3mKGdNRMDHUUwB-/view"
+          },
+          {
+            "titulo": "Episódio 11",
+            "link": "https://drive.google.com/file/d/1kuB8VySFdK90nl1YLjsIQ6_FeM6IRW2d/view"
+          },
+          {
+            "titulo": "Episódio 12",
+            "link": "https://drive.google.com/file/d/1TYrXIa7IQO2a0vNV6nkvoEm-xfTwcLB_/view"
+          },
+          {
+            "titulo": "Episódio 13",
+            "link": "https://drive.google.com/file/d/1QBz_tVWMLkuxciX6okf-c8fK__NWP_Um/view"
+          }
+        ]
+      },
+      {
+        "temporada": 4,
+        "episodios": [
+          {
+            "titulo": "Episódio 1",
+            "link": "https://drive.google.com/file/d/1-NbsELY0N37L17VKLjJaMWtwJR4KsWQ9/view"
+          },
+          {
+            "titulo": "Episódio 2",
+            "link": "https://drive.google.com/file/d/12uoD_HgEad036qYPHBszDrDT1YXBE0tb/view"
+          },
+          {
+            "titulo": "Episódio 3",
+            "link": "https://drive.google.com/file/d/1GnOQSOBCkOmoccVfD90zLj2yuGv1HVbU/view"
+          },
+          {
+            "titulo": "Episódio 4",
+            "link": "https://drive.google.com/file/d/1pjfh-CA1M05oAFA4IfD74mB3W67tG3v5/view"
+          },
+          {
+            "titulo": "Episódio 5",
+            "link": "https://drive.google.com/file/d/1-vSjG8VQ49rFMmpa_f6snMyGLpJQMped/view"
+          },
+          {
+            "titulo": "Episódio 6",
+            "link": "https://drive.google.com/file/d/1MU4Gqe0bMEnky2DFAG7L-3Wkecp8V8om/view"
+          },
+          {
+            "titulo": "Episódio 7",
+            "link": "https://drive.google.com/file/d/1pOYyoFCCnCMzhRWdbrVu_XLzNGMZBNBJ/view"
+          },
+          {
+            "titulo": "Episódio 8",
+            "link": "https://drive.google.com/file/d/1-KQq_YzAhnqEoZKNpRk-f22410fqqfiM/view"
+          },
+          {
+            "titulo": "Episódio 9",
+            "link": "https://drive.google.com/file/d/1kVYn_gPZpa8j8G8goL57HifUow_Gm_Ze/view"
+          },
+          {
+            "titulo": "Episódio 10",
+            "link": "https://drive.google.com/file/d/1Wx2hU45GfLJCglmodDULlI4azDYAHF3y/view"
+          },
+          {
+            "titulo": "Episódio 11",
+            "link": "https://drive.google.com/file/d/1SoVxyyod9dLtzRJ1GgIqfqt7zOb7hBKJ/view"
+          },
+          {
+            "titulo": "Episódio 12",
+            "link": "https://drive.google.com/file/d/1Xr7Tvaxgjd0lkWz_jC1tb5C7NB1Qxft8/view"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "Wandinha",
+    "ano": 2022,
+    "genero": [
+      "Mistério",
+      "Comédia"
+    ],
+    "duracao": "2 Temporadas",
+    "descricao": "Wandinha Addams é enviada para a Academia Nevermore, onde tenta dominar suas habilidades psíquicas, resolver mistérios e lidar com sua personalidade sombria.",
+    "capa": "https://tse2.mm.bing.net/th/id/OIP.ONp73QKbaPpQuTwPaOcA_gAAAA?pid=ImgDet&w=194&h=194&c=7&dpr=1,5&o=7&rm=3",
+    "banner": "https://th.bing.com/th/id/OIP.pBqQtfbPgIWfQw65GFSdiwHaDl?w=324&h=169&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+    "destaque": true,
+    "popular": true,
+    "adicionado": "2026-10-28",
+    "temporadas": [
+      {
+        "temporada": 1,
+        "episodios": [
+          {
+            "titulo": "Episódio 1",
+            "link": "https://drive.google.com/file/d/1-3oTwInvoT1q4spNvWAMU08oGESooWao/view"
+          },
+          {
+            "titulo": "Episódio 2",
+            "link": "https://drive.google.com/file/d/1-DuFk9w4uaAfiPdJndvffAB8-_5m5VmT/view"
+          },
+          {
+            "titulo": "Episódio 3",
+            "link": "https://drive.google.com/file/d/1-QAjusKN0ta5pp9_HJXD22ibAnG6nasy/view"
+          },
+          {
+            "titulo": "Episódio 4",
+            "link": "https://drive.google.com/file/d/1-WxFMYxlpZq4g9eidKr5erk1ta3bPjfi/view"
+          },
+          {
+            "titulo": "Episódio 5",
+            "link": "https://drive.google.com/file/d/1-MFF0tG0g5VLLpq0lKKK7hEZQJ7jdh0j/view"
+          },
+          {
+            "titulo": "Episódio 6",
+            "link": "https://drive.google.com/file/d/1-YAzxhn1vTb3aLRFerz0zRyz8xxQT-W6/view"
+          },
+          {
+            "titulo": "Episódio 7",
+            "link": "https://drive.google.com/file/d/1-_toei6iQTS9XnCPzmLonRdjw8MSG4c_/view"
+          },
+          {
+            "titulo": "Episódio 8",
+            "link": "https://drive.google.com/file/d/1-mdNPYuY2dXjoxSR1gBwSIRniwibqohJ/view"
+          }
+        ]
+      },
+      {
+        "temporada": 2,
+        "episodios": [
+          {
+            "titulo": "Episódio 1",
+            "link": "https://drive.google.com/file/d/1buxlKw153CvsoUuX89zItUkDHgHVLb_h/view"
+          },
+          {
+            "titulo": "Episódio 2",
+            "link": "https://drive.google.com/file/d/18Zf89QR2FuQeeFBSzAOV7k0HMrqHp3q6/view"
+          },
+          {
+            "titulo": "Episódio 3",
+            "link": "https://drive.google.com/file/d/1bjtS_ygY0Mc7k4SsXSbu0AyeE8NRciZA/view"
+          },
+          {
+            "titulo": "Episódio 4",
+            "link": "https://drive.google.com/file/d/1uVRrbA7mi4ZM1XBSbqHggIyC5l0Plp_X/view"
+          },
+          {
+            "titulo": "Episódio 5",
+            "link": "https://drive.google.com/file/d/1qKf-XhDIkH78bqjvwt_ibTpKv9gHRBSP/view"
+          },
+          {
+            "titulo": "Episódio 6",
+            "link": "https://drive.google.com/file/d/1nSIxPPrABsEmLPkVjLXb0fjtpGsPl4dB/view"
+          },
+          {
+            "titulo": "Episódio 7",
+            "link": "https://drive.google.com/file/d/13wu9DPGuogDxDeOq3lQsmjez45H4-q3T/view"
+          },
+          {
+            "titulo": "Episódio 8",
+            "link": "https://drive.google.com/file/d/15JJvFqQLSIXntnDSIhSZWVxLXV_RptMO/view"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "Loki",
+    "ano": 2021,
+    "genero": [
+      "Ficção científica",
+      "Ação"
+    ],
+    "duracao": "2 Temporadas",
+    "descricao": "Após roubar o Tesseract, Loki é capturado pela TVA, uma organização que controla o tempo. Forçado a ajudar a consertar linhas temporais, ele enfrenta variantes de si mesmo e acaba envolvido em uma ameaça que pode destruir o multiverso.",
+    "capa": "https://image.tmdb.org/t/p/w500/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
+    "banner": "https://image.tmdb.org/t/p/original/8Qvd8tZz6n9v9v7pZQ2UqXcX4bX.jpg",
+    "destaque": true,
+    "popular": true,
+    "adicionado": "2026-10-29",
+    "temporadas": [
+      {
+        "temporada": 1,
+        "episodios": [
+          {
+            "titulo": "Episódio 1",
+            "link": "https://drive.google.com/file/d/1y0W5N32Yv90HdTYHXCgoFmC5dMHmW9zV/view"
+          },
+          {
+            "titulo": "Episódio 2",
+            "link": "https://drive.google.com/file/d/1AlBQfr9zOdwS_fbovCZnW6BiPHvanunW/view"
+          },
+          {
+            "titulo": "Episódio 3",
+            "link": "https://drive.google.com/file/d/1oq_SZuf2tQZn-QKqfb_IJCbP62MK9jti/view"
+          },
+          {
+            "titulo": "Episódio 4",
+            "link": "https://drive.google.com/file/d/1AxRUkPhQ_Fe8IvXYZNK4XoKVN5kqpyKt/view"
+          },
+          {
+            "titulo": "Episódio 5",
+            "link": "https://drive.google.com/file/d/1aSvaPUlgtjJLxYpxazVWip_k2vutLbFm/view"
+          },
+          {
+            "titulo": "Episódio 6",
+            "link": "https://drive.google.com/file/d/17yRVkRg1ZvNLAPNhtd7XnoNelud-f4Lq/view"
+          }
+        ]
+      },
+      {
+        "temporada": 2,
+        "episodios": [
+          {
+            "titulo": "Episódio 1",
+            "link": "https://drive.google.com/file/d/1BrzuaPd9Qns7Bb5g5DnJXuXX4LN4x60P/view"
+          },
+          {
+            "titulo": "Episódio 2",
+            "link": "https://drive.google.com/file/d/1JtAUi7CpxGIr-uKn_JRpBIFKNMJYo3NU/view"
+          },
+          {
+            "titulo": "Episódio 3",
+            "link": "https://drive.google.com/file/d/18SGwjiYn9JnmOr_62huaVXAYUACndNeJ/view"
+          },
+          {
+            "titulo": "Episódio 4",
+            "link": "https://drive.google.com/file/d/15Six-Zjc7Xwq01oWBVTF3z9qOadQI4aq/view"
+          },
+          {
+            "titulo": "Episódio 5",
+            "link": "https://drive.google.com/file/d/1_ochtQmE3-1k-vyJ9GekZYf2EPLArn8E/view"
+          },
+          {
+            "titulo": "Episódio 6",
+            "link": "https://drive.google.com/file/d/1hvlR1RE3zEbzT2u7wbvD89Mymd8g4AnL/view"
+          }
+        ]
+      } 
+    ]
+  }
+]
