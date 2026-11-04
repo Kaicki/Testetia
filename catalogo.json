@@ -1,5 +1,19 @@
 [
   {
+"id": 127,
+"titulo": "Minha Melhor Amiga",
+"ano": 2026,
+"genero": ["Comédia"],
+"duracao": "1h59min",
+"descricao": "Júlia e Clara são melhores amigas que decidem viajar para Portugal depois que suas filhas adolescentes vão estudar em Lisboa. O que começa como uma viagem de férias se transforma em uma aventura cheia de surpresas, encontros e descobertas sobre a amizade e a vida.",
+"capa": "https://image.tmdb.org/t/p/original/wGfTFVeguXDXYrwPQ8QMFsaSK2M.jpg",
+"banner": "https://image.tmdb.org/t/p/original/q5IF3IHgKC4cQqQCp0VjllNkJp6.jpg",
+"link": "https://drive.google.com/file/d/12_D_ajq7Bw-2vawW1HjveSDdo9Nb3uBF/view?usp=drivesdk",
+"destaque": false,
+"popular": false,
+"adicionado": "2026-11-04"
+},
+  {
     "id": 121,
     "titulo": "Tinker Bell: Uma Aventura no Mundo das Fadas",
     "ano": 2008,
