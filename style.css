@@ -95,6 +95,13 @@ main{padding-bottom:calc(var(--nav) + var(--safe-b) + 16px)}
 .busca-topo{position:sticky;top:0;display:flex;gap:10px;align-items:center;padding:calc(10px + var(--safe-t)) 16px 10px;background:#000}
 #q{flex:1;padding:12px 14px;background:#262626;border:0;border-radius:4px;color:#fff;font-size:16px}
 #fechaBusca{color:#ddd}
+#busca {
+  z-index: 50;
+}
+
+#detalhe {
+  z-index: 55;
+}
 
 /* login */
 .auth-fundo{position:fixed;inset:0;z-index:100;background:#000d;display:flex;align-items:center;justify-content:center;padding:16px}
