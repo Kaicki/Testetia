@@ -9,7 +9,7 @@
     "capa": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
     "banner": "https://image.tmdb.org/t/p/w1280/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
     "link": "https://drive.google.com/file/d/1wsVGR8kAjk5zvTaEgm1i8d6KYsxTU4as/view?usp=drivesdk",
-    "destaque": false,
+    "destaque": true,
     "popular": false,
     "adicionado": "2026-11-04"
   },
@@ -23,7 +23,7 @@
     "capa": "https://image.tmdb.org/t/p/w500/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
     "banner": "https://image.tmdb.org/t/p/w1280/6YwkGolwdOMNpbTOmLjoehlVWs5.jpg",
     "link": "https://drive.google.com/file/d/1s8ZTUq2R7-eIr2dTWhzbYVsbJEp5HF2v/view?usp=drivesdk",
-    "destaque": false,
+    "destaque": true,
     "popular": false,
     "adicionado": "2026-11-04"
   },
@@ -37,7 +37,7 @@
     "capa": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
     "banner": "https://image.tmdb.org/t/p/w1280/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
     "link": "https://drive.google.com/file/d/1uuRgaM1tDw9sJeIsE-_xl6JNvHB3Zf9_/view?usp=drivesdk",
-    "destaque": false,
+    "destaque": true,
     "popular": false,
     "adicionado": "2026-11-04"
   },
@@ -51,7 +51,7 @@
     "capa": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
     "banner": "https://image.tmdb.org/t/p/w1280/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
     "link": "https://drive.google.com/file/d/15Jc-wpVEMEPVo5Sb61INetKeX9BRHgTS/view?usp=drivesdk",
-    "destaque": false,
+    "destaque": true,
     "popular": false,
     "adicionado": "2026-11-04"
   },
@@ -1076,34 +1076,6 @@
     "destaque": false,
     "popular": true,
     "adicionado": "2026-09-27"
-  },
-  {
-    "id": 67,
-    "titulo": "Vingadores: Guerra Infinita",
-    "ano": 2018,
-    "genero": ["Ação"],
-    "duracao": "2h 29m",
-    "descricao": "Thanos chega para coletar as Joias do Infinito e os Vingadores precisam impedir que ele elimine metade do universo.",
-    "capa": "https://loggado.com/wp-content/uploads/2018/04/guerra-infinita.jpg",
-    "banner": "",
-    "link": "https://drive.google.com/file/d/1wm0s1BavDUyGyS1YV20d67_8erC_h_WN/view",
-    "destaque": false,
-    "popular": true,
-    "adicionado": "2026-09-28"
-  },
-  {
-    "id": 68,
-    "titulo": "Vingadores: Ultimato",
-    "ano": 2019,
-    "genero": ["Ação"],
-    "duracao": "3h 01m",
-    "descricao": "Os heróis restantes tentam desfazer o estalo de Thanos em uma batalha final épica.",
-    "capa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqI3llE3DO6ulreBPW_uUcRJiJhkkvykGz_OCb74txhQ&s=10",
-    "banner": "",
-    "link": "https://drive.google.com/file/d/1Cvvm54sMf_kjHDxemJwWVaHiHQ7c2Z_m/view",
-    "destaque": false,
-    "popular": true,
-    "adicionado": "2026-09-29"
   },
   {
     "id": 69,
